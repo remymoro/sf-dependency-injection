@@ -1,0 +1,9 @@
+services:
+
+  class.a:
+    class: App\Service\ClassA
+    arguments: ["Dependency injection with yaml"]
+
+  class.b:
+    class: App\Service\ClassB
+    arguments: ["@class.a"]
